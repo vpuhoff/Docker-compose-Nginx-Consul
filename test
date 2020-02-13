@@ -7,7 +7,7 @@ events {
 http {
     include       mime.types;
     default_type  application/octet-stream;
-    lua_package_path "/usr/local/lib/lua/?.lua;;";
+    lua_package_path "/etc/nginx/lua/?.lua;;";
     lua_code_cache off;
     init_by_lua 'consul = require "resty.consul"';
 
