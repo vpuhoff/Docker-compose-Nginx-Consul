@@ -1,4 +1,4 @@
-FROM emazzotta/docker-nginx-lua
+FROM openresty/openresty
  
 COPY nginx.conf /etc/nginx/nginx.conf
 
